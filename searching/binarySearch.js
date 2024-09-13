@@ -17,4 +17,4 @@ function binarySearch(ordered_list, search_value) {
 const list = [1, 3, 5, 7, 9];
 
 console.log(binarySearch(list, 9)); // true
-console.log(binarySearch(list, 1)); // false
+console.log(binarySearch(list, 4)); // false
