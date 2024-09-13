@@ -6,7 +6,7 @@ function fibonacci(n) {
   }
 }
 //displays the nth number in the fibonacci series
-console.log(fibonacci(5)); // 8
+console.log(fibonacci(6)); // 8
 
 function fibonacciSequence(n) {
   let sequence = [];
