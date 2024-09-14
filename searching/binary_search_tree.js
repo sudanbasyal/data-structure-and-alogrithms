@@ -73,7 +73,7 @@ class BinarySearchTree {
         return node.left_child; // Case 2: One child (left)
       } else {
         // Case 3: Two children
-        const successor = this.minValue(node.right_child); // Find the successor
+        const successor = this.findSuccessor(node.right_child); // Find the successor
         node.data = successor.data; // Replace data with successor's data
         node.right_child = this.deleteNode(node.right_child, successor.data); // Delete the successor
       }
@@ -81,7 +81,7 @@ class BinarySearchTree {
     return node; // Return the updated node
   }
 
-  minValue(node) {
+  findSuccessor(node) {
     let current_node = node;
     while (current_node.left_child) {
       current_node = current_node.left_child;
