@@ -20,19 +20,19 @@ class BinarySearchTree {
         if (data < current_node.data) {
           if (current_node.left_child === null) {
             current_node.left_child = newNode;
-            return;
+            break;
           } else {
             current_node = current_node.left_child;
           }
         } else if (data > current_node.data) {
           if (current_node.right_child === null) {
             current_node.right_child = newNode;
-            return;
+            break;
           } else {
             current_node = current_node.right_child;
           }
         } else {
-          return;
+          break;
         }
       }
     }
